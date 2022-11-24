@@ -48,10 +48,10 @@ void define_ccViewPortParameters(py::module &m)
         .def("getCameraCenter", &ccViewportParameters::getCameraCenter)
         .def("setFocalDistance", &ccViewportParameters::setFocalDistance, "distance"_a)
         .def("getFocalDistance", &ccViewportParameters::getFocalDistance)
-        .def_static(
-            "IncrementToZNearCoef", &ccViewportParameters::IncrementToZNearCoef, "i"_a, "iMax"_a)
-        .def_static(
-            "ZNearCoefToIncrement", &ccViewportParameters::ZNearCoefToIncrement, "coef"_a, "iMax"_a)
+//        .def_static(
+//            "IncrementToZNearCoef", &ccViewportParameters::IncrementToZNearCoef, "i"_a, "iMax"_a)
+//        .def_static(
+//            "ZNearCoefToIncrement", &ccViewportParameters::ZNearCoefToIncrement, "coef"_a, "iMax"_a)
         .def("computeViewMatrix", &ccViewportParameters::computeViewMatrix)
         .def("computeScaleMatrix",
              [](const ccViewportParameters &self, const py::sequence &glViewPort) {

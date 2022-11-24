@@ -44,12 +44,12 @@ void define_ManualSegmentationTools(py::module &cccorelib)
             "poly"_a,
             "keppInside"_a,
             "viewMat"_a = nullptr)
-        .def_static("segmentReferenceCloud",
-                    &ManualSegmentationTools::segmentReferenceCloud,
-                    "cloud"_a,
-                    "minDist"_a,
-                    "maxDist"_a,
-                    "outside"_a)
+//        .def_static("segmentReferenceCloud",
+//                    &ManualSegmentationTools::segmentReferenceCloud,
+//                    "cloud"_a,
+//                    "minDist"_a,
+//                    "maxDist"_a,
+//                    "outside"_a)
         .def_static("segment",
                     (CCCoreLib::ReferenceCloud *
                      (*)(CCCoreLib::GenericIndexedCloudPersist *, ScalarType, ScalarType, bool))(
@@ -69,14 +69,14 @@ void define_ManualSegmentationTools(py::module &cccorelib)
                     "P"_a,
                     "polyVertices"_a)
 
-        .def_static("segmentMesh",
-                    &ManualSegmentationTools::segmentMesh,
-                    "theMesh"_a,
-                    "pointsIndexes"_a,
-                    "pointsWillBeInside"_a,
-                    "progressCb"_a = nullptr,
-                    "destCloud"_a = nullptr,
-                    "indexShift"_a = 0)
+//        .def_static("segmentMesh",
+//                    &ManualSegmentationTools::segmentMesh,
+//                    "theMesh"_a,
+//                    "pointsIndexes"_a,
+//                    "pointsWillBeInside"_a,
+//                    "progressCb"_a = nullptr,
+//                    "destCloud"_a = nullptr,
+//                    "indexShift"_a = 0)
         .def_static("segmentMeshWithAAPlane",
                     &ManualSegmentationTools::segmentMeshWithAAPlane,
                     "mesh"_a,

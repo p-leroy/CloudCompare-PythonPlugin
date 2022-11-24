@@ -198,7 +198,7 @@ void define_ccGLWindow(py::module &m)
         .def("setFov", &ccGLWindow::setFov, "fov"_a)
         .def("getFov", &ccGLWindow::getFov)
         .def("setGLCameraAspectRatio", &ccGLWindow::setGLCameraAspectRatio, "ar"_a)
-        .def("setZNearCoef", &ccGLWindow::setZNearCoef, "coef"_a)
+//        .def("setZNearCoef", &ccGLWindow::setZNearCoef, "coef"_a)
         .def("invalidateVisualization", &ccGLWindow::invalidateVisualization)
         // TODO renderToImage
         .def("renderToFile",
